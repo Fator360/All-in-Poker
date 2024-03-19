@@ -1,0 +1,326 @@
+body{
+    background-color: #2C3E50 ;
+    margin:2%;
+}
+
+#OAuth-window{
+    margin-left:auto;
+    margin-right: auto;
+    width: 50%;
+    max-width:350px;
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content:center;
+    border-radius: 15px;
+    background-color: #34495E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.OAuth-span{
+    color:#fff;
+    font-size:18px;
+    font-family:'Montserrat';
+    padding:5px;
+    background-color:#0085ff;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    min-width: 20%;
+}
+
+.OAuth-span-unfocused{
+    color:#fff;
+    font-size:18px;
+    font-family:'Montserrat';
+    padding:5px;
+    background-color:#003464;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    
+    min-width: 20%;
+}
+
+
+#login{
+   display:flex;
+    flex-direction:column;
+    background-color: #0085ff;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-top-right-radius: 15px;
+}
+
+#sign-up{
+    display:flex;
+    flex-direction:column;
+    background-color: #0085ff;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+
+.OAuth-input{
+    font-family: 'Montserrat';
+    padding-left:15px;
+    width: 60%;
+    height: 30px;
+    border:none;
+    border-radius:15px;
+    margin-bottom: 10px;
+}
+
+.titulo{
+    font-size: 72px;
+    font-family: 'Roboto', sans-serif;
+    color: #F8F6F1;
+    text-align: center;
+    margin: 0px;
+}
+
+.subtitulo{
+    font-family: "Montserrat", Arial;
+    text-align: center;
+    color: #fff;
+}
+
+.error{
+    padding: 15px;
+    font-family: 'montserrat';
+    color: #FC5736;
+    text-align: center;
+    background-color: rgba(252, 87, 54, .5);
+}
+
+.warning-green{
+    padding: 15px;
+    font-family: 'montserrat';
+    text-align: center;
+    color: #2ecc71; /* Verde harmonioso */
+    background-color: rgba(46, 204, 113, 0.5); /* Verde com 50% de opacidade */
+}
+.addPlayer{
+    display: flex;
+    font-family: 'montserrat';
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.addPlayer h2{
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.addPlayer input{
+    height: 35px;
+    width: 40%;
+    max-width: 250px;
+    font-size: 20px;
+    font-family: 'montserrat';
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#botAddPlayer{
+    font-family: 'montserrat';
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    border-radius: 10%;
+    background-color: #6320EE;
+    color: #F8F6F1;
+}
+
+#repeatingGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.creditos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonMinus{
+    cursor: pointer;
+    width:30px;
+    height:30px;  
+    border-radius:50%;
+    border-style: solid;
+    border-color:white;
+    background-color: #5283F4;
+    color: #ffff;
+    font-size: 20px;
+    padding-bottom: 10px;
+    transition: .2s
+}
+
+.buttonMinus:active{
+    width:30px;
+    height:30px;  
+    border-radius:50%;
+    border-style: solid;
+    border-color:#7c7c7c;
+    background-color: #0D49D3;
+    color: #ffff;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.buttonAdd{
+    cursor: pointer;
+    width:30px;
+    height:30px;  
+    border-radius:50%;
+    border-style: solid;
+    border-color:white;
+    background-color: #FC5736;
+    color: #ffff;
+    font-size: 20px;
+    transition: .2s;
+}
+
+.buttonAdd:active{
+    width:30px;
+    height:30px;  
+    border-radius:50%;
+    border-style: solid;
+    border-color:#7c7c7c;
+    background-color: #F12B04;
+    color: #ffff;
+    font-size: 20px;
+}
+
+
+.cartaoPlayer {
+    color: #ECF0F1;
+    margin: 10px; /* ou qualquer margem que desejar entre as células */
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'montserrat';
+    font-weight: 200;
+    background-color: #34495E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+
+.cartaoPlayer:hover {
+    background-color: #405A70;
+}
+
+.cartaoPlayer img{
+    width: 100px;
+    height: auto;
+}
+
+/* Estilo para o input de número */
+.inputAlter {
+    height: 35px;
+    font-size: 24px;
+    font-family: 'montserrat';
+    border: 2px solid #6320EE; /* Cor da borda normal */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 5px; /* Espaçamento interno */
+    transition: border 0.3s; /* Transição suave na cor da borda */
+}
+
+/* Adicionando estilo quando o input está em foco */
+.inputAlter:focus {
+    border: 2px solid #FC5736; /* Cor da borda quando em foco */
+    outline: none; /* Remover a borda padrão do navegador */
+}
+
+.buttonSim{
+    font-family: 'montserrat';
+    background-color: #28a745; /* Cor de fundo verde */
+    color: #ffffff; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Borda arredondada do botão */
+    cursor: pointer; /* Cursor ao passar o mouse sobre o botão */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+}
+
+.buttonNao{
+    font-family: 'montserrat';
+    background-color: #dc3545; /* Cor de fundo vermelha */
+    color: #ffffff; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Borda arredondada do botão */
+    cursor: pointer; /* Cursor ao passar o mouse sobre o botão */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+}
+
+
+.deleteButton{
+    width: 70%;
+    height: 35px;
+    margin-bottom: 15px;
+    color: #FBC6D1;
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 100px;
+    border: none;
+    background-color: #F24067;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.solicitarButton{
+    width: 70%;
+    height: 35px;
+    margin-bottom: 15px;
+    color: #B9DCF3; /* Mudar para uma cor de texto legível */
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 100px;
+    border: none;
+    background-color: #3498db; /* Azul harmonioso */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.zerarButton{
+    width: 240px;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: #fff; /* Verde legível */
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 100px;
+    border: none;
+    background-color: #27ae60; /* Verde harmonioso */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.loginButton{
+    width: 80%;
+    height: 35px;
+    margin-bottom: 15px;
+    color: #fff; /* Verde legível */
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 100px;
+    border: none;
+    background-color: #27ae60; /* Verde harmonioso */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}

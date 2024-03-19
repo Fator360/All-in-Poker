@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-In Poker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <h1 class="titulo" style="color: #000; font-size: 80px">♠</h1>
+    <div style="display: flex; justify-content: center">
+    <h1 class="titulo" style="color: #f00; font-size: 80px">♥️ </h1>
+    <h1 class="titulo">All-In Poker️️</h1>
+    <h1 class="titulo" style="color: #f00; font-size: 80px"> ♦</h1>
+    </div>
+    <h1 class="titulo" style="color: #000; font-size: 80px">♣️</h1>
+    <div id="OAuth-window">
+        <div style="display: flex">
+        <span class="OAuth-span" onclick="showOAuth('login')" id="span-login">Login</span>
+        <span class="OAuth-span-unfocused" onclick="showOAuth()" id="span-signup">Cadastro</span>
+        </div>
+        <div id="login">
+            <h2 class="subtitulo">Faça seu Login</h2>
+            <input type="text" id="login-email" placeholder="Email" class="OAuth-input">
+            <input type="password" id="login-senha" placeholder="Senha" class="OAuth-input">
+            <button class="loginButton" onclick="login()">Login</button>
+        </div>
+        <div id="sign-up" style="display: none;">
+            <h2 class="subtitulo">Faça seu Cadastro</h2>
+            <input type="text" id="signup-nome" placeholder="Nome"  class="OAuth-input">
+            <input type="text" id="signup-email" placeholder="Email" class="OAuth-input">
+            <input type="password" id="signup-senha" placeholder="Senha" class="OAuth-input">
+            <input type="text" id="signup-pix" placeholder="Pix" class="OAuth-input">
+            <input type="text" id="signup-fone" placeholder="Phone" class="OAuth-input">
+            <button class="loginButton" onclick="cadastrarNovoUsuario()">Cadastrar</button>
+        </div>
+        
+    </div>
+    <div id="Main-window" style="display: none">
+        <h2 class="subtitulo" id="text-name" style="font-weight: 200"></h2>
+        <button class="buttonNao" id="sairBtn" onclick="zerarCookies()">Sair</button>
+    <div class="addPlayer" style="align-items: center">
+<h2 style="color: #fff">Adicionar jogador:</h2>
+<input type="text" name="" id="addPlayerInput" placeholder="   Nome">
+<input type="tel" name="" id="addPlayerInputNumber" placeholder="   Whatsapp">
+<input type="text" name="" id="addPlayerInputPix" placeholder="   Chave PIX">
+<button id="botAddPlayer"><b>+</b></button>
+<button class="zerarButton" onclick="zerarValores()">Zerar</button>
+<div style="display: flex; align-items: center">
+<h2 style="color: #fff">Preço Buy-in (R$):</h2>
+<input type="number" min=0 name="" id="buysInput" placeholder="Valor Buy" style="max-width: 50px; text-align: center" onchange="getBuyValue(this.value)">
+<h2 style="color: #fff">Fichas por Real: </h2>
+<input type="number" min=0 name="" id="propInput" placeholder="Proporção" style="max-width: 150px; text-align: center" onchange="setProp(this.value)">
+</div>
+
+    </div>
+    <div class="error" id="error" style="display: none">
+        <h2>Insira valores válidos de nome, telefone e PIX</h2>
+    </div>
+    <div class="warning-green" id="warning" style="display: none">
+        <h2>Mensagem enviada com sucesso!</h2>
+    </div>
+<div id="repeatingGroup">
+
+</div>
+<script src="script.js"></script>
+</div>
+</body>
+</html>
